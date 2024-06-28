@@ -1,0 +1,53 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+
+const EXPERIENCIE = [
+    {
+        date: '2024',
+        title: 'Fonoaudiologia',
+        description: 'Desarrollo de Software para las notarias, un proyecto realizado con el sena, usando Java y MYSQL',
+    },
+    
+    {
+        date: '2023',
+        title: 'Asordan',
+        description: 'Desarrollo de Paginas Web para asociación de reciclaje con la Universidad Santiago de Cali',
+        link: "#",
+    },
+    
+    {
+        date: '2023',
+        title: 'Arena',
+        description: 'Desarrollo de Paginas Web para asociación de reciclaje con la Universidad Santiago de Cali',
+        link: "#",
+    },
+    
+    {
+        date: '2023',
+        title: 'Renacer',
+        description: 'Desarrollo de Paginas Web para asociación de reciclaje con la Universidad Santiago de Cali',
+        link: "#",
+    },
+    
+    {
+        date: '2021',
+        title: 'Ultimate Notary',
+        description: 'Desarrollo de Software para las notarias, un proyecto realizado con el sena, usando Java y MYSQL',
+    },
+    
+]
+
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700"> 
+    {
+        EXPERIENCIE.map(experiencie => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }                 
+    
+</ol>
+

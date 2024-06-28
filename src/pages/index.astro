@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import Github from '../icons/Github.astro';
+import Linkedin from '../icons/Linkedin.astro';
+import SocialRow from "../components/SocialRow.astro"
+import Gmail from "../icons/Gmail.astro"
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import BriefCase from '../icons/BriefCase.astro';
+---
+
+<Layout 
+title="Portfolio de Miangel - Desarrollador y Programador Web"
+description="Contrata a Miangel para crear tu aplicación web, aplicación mobile o tu software. "
+>
+	<main>
+		<SectionContainer class="py-44 pb-24">
+			<img src="public/avatar.png" class="rounded-full size-24 mb-5">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">Hola, Soy Miangel
+				<a 
+				href="https://www.linkedin.com/in/miguel-angel-sandoval-manrique-15a773256/" 
+				target="_blank" 
+				rel="noopener"
+				class="flex justify-center items-center"><Badge>Disponble para trabajar</Badge></a>
+			</h1>
+			<h2 class="text-2xl text-wrap"	>
+				<span class="text-purple-600">Desarrollador Web y Desarrollador de Software Junior. </span>
+				<span class="text-yellow-200">De Cali, Colombia.</span>
+				<span class="text-emerald-600">Especializado en desarrollar aplicaciones web.</span>
+			</h2>
+			
+			<nav class="flex gap-x-2 mt-10">
+				<SocialRow href="https://www.linkedin.com/in/miguel-angel-sandoval-manrique-15a773256/">
+					<Linkedin class="size-5" />
+					LinkedIn
+				</SocialRow>
+				<SocialRow href="https://github.com/Miangel0">
+					<Github class="size-5" />
+					GitHub
+				</SocialRow>
+				<SocialRow>
+					<Gmail class="size-5" />
+					miguelsandoman@gmail.com
+				</SocialRow>
+			</nav>
+		</SectionContainer>
+		<SectionContainer id="proyectos">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefCase class="size-5" />
+				Experiencia en proyectos
+			</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
